@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgb(0, 0, 80);
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #994aff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #994aff;
+            font-weight: bold;
+        }
+        .contact {
+            padding: 50px 0;
+        }
+        .contact h2 {
+            font-size: 30px;
+            color: rgb(0, 0, 80);
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5ebf2;
+            text-align: center;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 97%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #7308ff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        form button:hover {
+            background-color: rgb(0, 0, 80);
+        }
+        .contact-info h3, .contact-info p {
+            color: rgb(0, 0, 80);
+            margin: 0;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #994aff;">Student</span> Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="current">Contact</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="box">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="box">
+                <div class="contact-info">
+                    <h3>Joswin Emmanuel</h3>
+                    <p>Full-Stack Developer</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p>9526547119</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>joswinemmanuel2002@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Website</h3>
+                    <p><a href="https://sites.google.com/view/joswinemmanuel-portfolio/" target="_blank">joswinemmanuel-portfolio</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
